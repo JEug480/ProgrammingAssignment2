@@ -1,0 +1,9 @@
+## Introduction: Plot 30 day mortality rate 
+This function is going to change the data outcome into numeric because there are a lot of column 
+in the data. Except the 11th column which is the 30 days on the heart attack mortality
+
+data_outcome[, 11] <-as.numeric (data_outcom[,11])
+ 
+ ## create histogram
+ p <-ggplot2::ggplot(data_outcome, ases(x = data_outcome,[, 11])) +
+     geom_histogram(show.legend = False)
